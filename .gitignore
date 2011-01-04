@@ -1,14 +1,20 @@
-
-/build
-AssemblyInfo.cs
-
-# Standard VS.NET and ReSharper Foo
-src/*/obj
-src/*/bin
+obj
+bin
+bin/*
+scratch
+scratch/*
+deploy
+deploy/*
+_ReSharper.*
 *.csproj.user
-*ReSharper.user
-_ReSharper*
-*resharper*
+*.resharper.user
+*.ReSharper.user
 *.suo
 *.cache
-* Thumbs.db
+*.Cache
+~$*
+Thumbs.db
+*.cache
+.svn
+*.pidb
+*.user

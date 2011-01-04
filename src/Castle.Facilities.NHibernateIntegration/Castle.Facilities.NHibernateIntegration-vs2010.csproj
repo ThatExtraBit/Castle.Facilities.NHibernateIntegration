@@ -97,30 +97,6 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Castle.Core">
-      <Name>Castle.Core</Name>
-      <HintPath>..\..\lib\$(BuildConfigKey)\Castle.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Castle.Services.Transaction">
-      <Name>Castle.Services.Transaction</Name>
-      <HintPath>..\..\lib\$(BuildConfigKey)\Castle.Services.Transaction.dll</HintPath>
-    </Reference>
-    <Reference Include="Castle.Windsor">
-      <Name>Castle.Windsor</Name>
-      <HintPath>..\..\lib\$(BuildConfigKey)\Castle.Windsor.dll</HintPath>
-    </Reference>
-    <Reference Include="Iesi.Collections">
-      <Name>Iesi.Collections</Name>
-      <HintPath>..\..\lib\$(BuildConfigKey)\Iesi.Collections.dll</HintPath>
-    </Reference>
-    <Reference Include="log4net">
-      <Name>log4net</Name>
-      <HintPath>..\..\lib\$(BuildConfigKey)\log4net.dll</HintPath>
-    </Reference>
-    <Reference Include="NHibernate">
-      <Name>NHibernate</Name>
-      <HintPath>..\..\lib\$(BuildConfigKey)\NHibernate.dll</HintPath>
-    </Reference>
     <Reference Include="System">
       <Name>System</Name>
     </Reference>
@@ -253,7 +229,7 @@
       <Link>CastleKey.snk</Link>
     </None>
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\..\wraps\openwrap\build\OpenWrap.CSharp.targets" />
   <Import Project="$(RootPath)\Settings.proj" />
   <Import Project="$(BuildScriptsPath)\Castle.Common.targets" />
   <PropertyGroup>

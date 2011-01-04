@@ -1,0 +1,7 @@
+﻿name: Castle.Facilities.NHibernateIntegration
+depends: openwrap anchored content
+depends: castle.core = 2.5
+depends: castle.services.transaction = 2.5
+depends: castle.windsor = 2.5
+depends: nhibernate = 3.0
+build: msbuild; profile=net35; project=src\Castle.Facilities.NHibernateIntegration\Castle.Facilities.NHibernateIntegration-vs2010.csproj
